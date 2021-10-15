@@ -1,2 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [ocr-screenshots-macos](#ocr-screenshots-macos)
+  - [Install Instructions](#install-instructions)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ocr-screenshots-macos
-OCR all screenshots
+
+OCR all screenshots on macOS
+
+Based on [Organize and Index Your Screenshots (OCR) on macOS](https://alexn.org/blog/2020/11/11/organize-index-screenshots-ocr-macos.html)
+
+## Install Instructions
+
+1. Checkout this repository
+2. `make ocr-screenshots`
