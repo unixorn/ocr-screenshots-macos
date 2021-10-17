@@ -2,21 +2,26 @@
 
 OCR all screenshots on macOS
 
-Based on Alexandru Nedelcu's [Organize and Index Your Screenshots (OCR) on macOS](https://alexn.org/blog/2020/11/11/organize-index-screenshots-ocr-macos.html) blog post. `screenshots-sync` is his, the LICENSE only applies to the Makefile.
+## Status
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Superlinter](https://github.com/unixorn/ocr-screenshots-macos/actions/workflows/superlinter.yml/badge.svg)
+
+
+Alexandru Nedelcu wrote a blog post, [Organize and Index Your Screenshots (OCR) on macOS](https://alexn.org/blog/2020/11/11/organize-index-screenshots-ocr-macos.html), showing how to set up automatic OCR for your screen shots.
+
+This repo automates the setup steps detailed in their article so that all you have to do is install [homebrew](https://brew.sh) and then run `make ocr`.
+
+They wrote `screenshots-sync` and did all the hard work, the LICENSE only applies to the `Makefile`.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [ocr-screenshots-macos](#ocr-screenshots-macos)
-  - [Install Instructions](#install-instructions)
+- [Install Instructions](#install-instructions)
+- [Details](#details)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Status
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-![Superlinter](https://github.com/unixorn/ocr-screenshots-macos/actions/workflows/superlinter.yml/badge.svg)
 
 ## Install Instructions
 
