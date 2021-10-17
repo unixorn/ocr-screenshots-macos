@@ -14,7 +14,9 @@ Based on Alexandru Nedelcu's [Organize and Index Your Screenshots (OCR) on macOS
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Status
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Funixorn%2Focr-screenshots-macos%2Fbadge&style=plastic)](https://actions-badge.atrox.dev/unixorn/ocr-screenshots-macos/goto)
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![Superlinter](https://github.com/unixorn/ocr-screenshots-macos/actions/workflows/superlinter.yml/badge.svg)
 
 ## Install Instructions
 
