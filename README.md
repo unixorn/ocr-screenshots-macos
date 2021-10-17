@@ -20,6 +20,8 @@ Based on Alexandru Nedelcu's [Organize and Index Your Screenshots (OCR) on macOS
 
 ## Install Instructions
 
+You must have [homebrew](https://brew.sh) installed to use this `Makefile`.
+
 1. Checkout this repository
 2. `make ocr-screenshots`
 

@@ -7,7 +7,7 @@ help:
 ocr: ocr-screenshots
 ocr-screenshots: deps install-launchd
 
-deps: dirs update-screnshot-location install-tesseract
+deps: dirs update-screenshot-location install-tesseract
 
 plist:
 	sed "s/USERNAME/${USER}/g" < sync.ocr.plist-template > sync.ocr.plist
@@ -23,7 +23,7 @@ dirs:
 	mkdir -p ~/Dropbox/Screenshots/Processing
 	mkdir -p ~/Dropbox/Screenshots/OCR
 	mkdir -p ~/Dropbox/Screenshots/Raw
-	mkdir ~/bin
+	mkdir -p ~/bin
 	mkdir -p ~/Library/LaunchAgents
 
 install-tesseract:
