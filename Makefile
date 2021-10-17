@@ -1,8 +1,13 @@
+# Copyright 2021 Joe Block <jpb@unixorn.net>
+# License: Apache 2.0
+
 help:
-	@echo "make ocr-screenshots to set up OCR for all new screen shots"
+	@echo "run 'make ocr-screenshots' to set up OCR for all new screen shots"
 
 ocr: ocr-screenshots
 ocr-screenshots: deps install-launchd
+
+deps: dirs update-screnshot-location install-tesseract
 
 plist:
 	sed "s/USERNAME/${USER}/g" < sync.ocr.plist-template > sync.ocr.plist
@@ -14,8 +19,6 @@ install-launchd: dirs install-script plist
 install-script: dirs
 	cp screenshots-sync ~/bin
 
-deps: dirs update-screnshot-location install-tesseract
-
 dirs:
 	mkdir -p ~/Dropbox/Screenshots/Processing
 	mkdir -p ~/Dropbox/Screenshots/OCR
@@ -26,5 +29,5 @@ dirs:
 install-tesseract:
 	brew install tesseract
 
-update-screenshot-location:
+update-screenshot-location: dirs
 	defaults write com.apple.screencapture location ~/Dropbox/Screenshots/Processing

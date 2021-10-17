@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
+#
+# Author: Alexandru Nedelcu
+# Source: https://alexn.org/blog/2020/11/11/organize-index-screenshots-ocr-macos.html
 
 require 'optparse'
 require 'pp'
