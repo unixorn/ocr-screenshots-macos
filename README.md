@@ -20,3 +20,15 @@ Based on Alexandru Nedelcu's [Organize and Index Your Screenshots (OCR) on macOS
 
 1. Checkout this repository
 2. `make ocr-screenshots`
+
+## Details
+
+When you run `make ocr-screenshots`, `make` will:
+
+1. Create `~/bin`, `~/Dropbox/Screenshots/OCR`, `~/Dropbox/Screenshots/Processing` and `~/Dropbox/Screenshots/Raw` if they don't exist
+2. Install tesseract with `brew`
+3. Copy `screenshots-sync` to `~/bin`
+4. Create a `sync.ocr.plist` file that's aware of your specific directory paths
+5. Install the plist.
+
+Per the original [post](https://alexn.org/blog/2020/11/11/organize-index-screenshots-ocr-macos.html), new screen shots will then automatically get written to `~/Dropbox/Screenshots/Processing` and macOS will trigger an OCR run with `screenshots-sync` - processed PDFs with text annotations will be written to `~/Dropbox/Screenshots/OCR`, and the originals will be moved to `~/Dropbox/Screenshots/Raw`.
