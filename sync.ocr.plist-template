@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>my.screenshot.ocr</string>
+    <key>ProgramArguments</key>
+    <array>
+        <!-- TODO: change USERNAME with your username -->
+        <string>/Users/USERNAME/bin/screenshots-sync</string>
+        <string>--input-dir</string>
+        <!-- TODO: change USERNAME with your username -->
+        <string>/Users/USERNAME/Dropbox/Screenshots/Processing</string>
+        <string>--output-ocr-dir</string>
+        <!-- TODO: change USERNAME with your username -->
+        <string>/Users/USERNAME/Dropbox/Screenshots/OCR</string>
+        <string>--output-raw-dir</string>
+        <!-- TODO: change USERNAME with your username -->
+        <string>/Users/USERNAME/Dropbox/Screenshots/Raw</string>
+    </array>
+    <key>WatchPaths</key>
+    <array>
+        <!-- TODO: change USERNAME with your username -->
+        <string>/Users/USERNAME/Dropbox/Screenshots/Processing</string>
+    </array>
+    <key>ThrottleInterval</key>
+    <integer>5</integer>
+    <key>StandardOutPath</key>
+    <!-- TODO: change USERNAME with your username -->
+    <string>/Users/USERNAME/Library/Logs/screenshots-sync.log</string>
+    <key>StandardErrorPath</key>
+    <!-- TODO: change USERNAME with your username -->
+    <string>/Users/USERNAME/Library/Logs/screenshots-sync.log</string>
+</dict>
+</plist>
